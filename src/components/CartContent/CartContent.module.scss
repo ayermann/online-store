@@ -84,7 +84,7 @@
             color: #fe5f1e;
             margin-right: 10px;
           }
-          .add:hover {
+          .add:active {
             color: white;
             background-color: #fe5f1e;
             cursor: pointer;
@@ -104,7 +104,7 @@
             color: #fe5f1e;
             margin-left: 10px;
           }
-          .minus:hover {
+          .minus:active {
             color: white;
             background-color: #fe5f1e;
             cursor: pointer;
@@ -125,7 +125,7 @@
           width: 50px;
           text-align: center;
         }
-        .delete:hover {
+        .delete:active {
           cursor: pointer;
         }
       }
@@ -165,7 +165,7 @@
         align-items: center;
         justify-content: center;
       }
-      .link:hover {
+      .link:active {
         color: #fff;
         background-color: black;
       }
@@ -187,7 +187,7 @@
         transition: all 0.3s;
         color: #fe5f1e;
       }
-      button:hover {
+      button:active {
         color: #fff;
         background-color: #fe5f1e;
       }

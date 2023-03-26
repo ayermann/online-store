@@ -1,34 +1,26 @@
 import styles from './CartContent.module.scss';
 import { Link } from 'react-router-dom';
+import cart__black from '../../assets/images/cart__black.svg';
+import bin from '../../assets/images/bin.svg';
+import hdd from '../../assets/images/hdd.svg';
+import close from '../../assets/images/close.svg';
 const CartContent = () => {
   return (
     <div className={styles.root}>
       <div className={styles.top}>
         <div className={styles.logo}>
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/feather-5/24/shopping-cart-256.png"
-            alt=""
-            width={30}
-          />
+          <img src={cart__black} alt="" width={30} />
           <span>Shopping cart</span>
         </div>
         <div className={styles.emptyCart}>
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-256.png"
-            alt=""
-            width={18}
-          />
+          <img src={bin} alt="" width={18} />
           <span>Empty the shopping cart</span>
         </div>
       </div>
       <div className={styles.items}>
         <div className={styles.item}>
           <div className={styles.leftBox}>
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/whcompare-servers-web-hosting/29/ssd-dark-512.png"
-              alt=""
-              width={50}
-            />
+            <img src={hdd} alt="" width={50} />
             <div className={styles.title}>Intel Core i9 12900H</div>
           </div>
           <div className={styles.rightBox}>
@@ -39,11 +31,7 @@ const CartContent = () => {
             </div>
             <div className={styles.totalPrice}>990 $</div>
             <div className={styles.delete}>
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/linecon/512/cross-256.png"
-                alt=""
-                width={30}
-              />
+              <img src={close} alt="" width={30} />
             </div>
           </div>
         </div>

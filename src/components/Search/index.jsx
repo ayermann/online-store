@@ -2,6 +2,8 @@ import styles from './Search.module.scss';
 import React from 'react';
 import debounce from 'lodash.debounce';
 import { SearchContext } from '../../App';
+import search__loop from '../../assets/images/search__loop.png';
+import clear__search from '../../assets/images/clear__search.png';
 
 const Search = () => {
   const [value, setValue] = React.useState('');
@@ -27,11 +29,7 @@ const Search = () => {
 
   return (
     <div className={styles.root}>
-      <img
-        src="https://cdn2.iconfinder.com/data/icons/user-interface-169/32/search-256.png"
-        alt=""
-        width={16}
-      />
+      <img src={search__loop} alt="" width={16} />
       <input
         ref={inputRef}
         value={value}
@@ -43,7 +41,7 @@ const Search = () => {
         <img
           className={styles.clear}
           onClick={onClickClear}
-          src="https://cdn3.iconfinder.com/data/icons/user-interface-169/32/cross-256.png"
+          src={clear__search}
           alt=""
           width={20}
         />
